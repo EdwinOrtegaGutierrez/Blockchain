@@ -1,0 +1,7 @@
+.box{
+    width: 70vw;
+    height: 80vh;
+    transform: translateY(0); /* Eleva la caja al pasar el mouse */
+    margin: 1rem auto; /* Centrado con margen superior e inferior */
+}
+

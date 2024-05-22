@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="box" style="height: 650px;">
+        <h1 class="title">Create Account</h1>
+        <input class="input" type="text" #name  placeholder="Name">
+        <input class="input" type="number" #age placeholder="Age">
+        <input class="input" type="email" #email placeholder="Username or email">
+        <input class="input" type="password" #password placeholder="Password">
+        <input class="input" type="password" #cPassword placeholder="Confirm Password">
+        <button class="button" type="button" (click)="createUser(name.value, age.value, email.value, password.value, cPassword.value);">Create</button>
+        <a class="link" href="/forgot_password">Forgot Password?</a>
+    </div>
+
+    <div class="box">
+        <p>Back to <a class="link" href="/">Home</a></p>
+    </div>
+</div>

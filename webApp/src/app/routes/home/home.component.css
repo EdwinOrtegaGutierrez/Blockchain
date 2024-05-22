@@ -1,0 +1,17 @@
+.box{
+    width: 70vw;
+    height: 80vh;
+    transform: translateY(0); /* Eleva la caja al pasar el mouse */
+    margin: 1rem auto; /* Centrado con margen superior e inferior */
+}
+
+
+img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 5px #888888;
+}  

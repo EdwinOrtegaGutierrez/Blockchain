@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+/** FONT FAMILY */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+/** FONDO */
+body {
+    background-image: url('../src/assets/images/vegetable_patch.png');
+    /* Ajusta la imagen de fondo al tamaño de la pantalla */
+    background-size: cover;
+    /* La imagen de fondo no se repite */
+    background-repeat: no-repeat;
+}
+
+/** BOX */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo blanco con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Animación suave al pasar el mouse */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque para el fondo acrílico */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari y Edge */
+    min-width: 350px; /* Ancho mínimo de 350px */
+    min-height: 150px; /* Altura mínima de 150px */
+    &:hover {
+        transform: translateY(-8px); /* Eleva la caja al pasar el mouse */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: space-between; /* Asegura un espaciado uniforme entre elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 0 2rem; /* Añade un relleno horizontal */
+    border-radius: 15px; /* Esquinas redondeadas para un look moderno */
+    min-height: 60px; /* Altura mínima para la barra */
+    width: 40%; /* Ancho relativo al contenedor para responsividad */
+    margin: 1rem auto; /* Centrado con margen superior e inferior */
+
+}
+
+
+/** ELEMENTOS HTML */
+.button, .button-warning {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    color: white;
+}
+
+.button {
+    background-color: #4caf4f62;
+    &:hover {
+        background-color: #45a049;
+    }
+}
+
+.button-warning {
+    background-color: #f3d54f50;
+    &:hover {
+        background-color: #f3d54f;
+    }
+}
+
+.title {
+    color: #332f2f; /* Color del texto */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+}
+.link {
+    color: #0066cc; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    &:hover {
+        text-decoration: underline; /* Subrayado al pasar el mouse */
+    }
+}
+
+.input {
+    width: 80%; /* Ancho completo dentro de la caja */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Margen arriba y abajo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: medium;
+}

@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Asegura un espaciado uniforme entre elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 0 2rem; /* Añade un relleno horizontal */
+    background-color: rgba(255, 255, 255, 0.5); /* Usa RGBA para mejor control de opacidad */
+    border-radius: 15px; /* Esquinas redondeadas para un look moderno */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más suave para profundidad */
+    transition: all 0.3s ease-in-out; /* Transiciones suaves para interactividad */
+    backdrop-filter: blur(10px); /* Menos desenfoque para no perder legibilidad */
+    min-height: 60px; /* Altura mínima para la barra */
+    width: 40%; /* Ancho relativo al contenedor para responsividad */
+    margin: 1rem auto; /* Centrado con margen superior e inferior */
+}
+
+.nav-item {
+    color: #333;
+    background: none;
+    font-weight: 600;
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+    text-transform: uppercase;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.nav-item:hover {
+    color: #45a049;
+    border-bottom: 3px solid #45a049; /* Línea inferior verde al pasar el ratón */
+}
+

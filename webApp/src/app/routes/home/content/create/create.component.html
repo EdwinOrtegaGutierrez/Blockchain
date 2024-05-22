@@ -1,0 +1,21 @@
+<app-navbar/>
+
+<div class="box">
+    <h1 class="title">Create orchard in meters!</h1>
+    <div class="content">
+        <input type="number" class="input" placeholder="Width" #orchardWidht>
+        <input type="number" class="input" placeholder="Length" #orchardLength>
+    </div>
+    <h1 class="title">Number of squares (Width by length).</h1>
+    <div class="content">
+        <input type="number" class="input" placeholder="Width" #squeresWidth>
+        <input type="number" class="input" placeholder="Length"#squeresLength>
+    </div>
+    <h1 class="title">Individual measurements for each square!</h1>
+    <div class="content">
+        <input type="number" class="input" placeholder="Width" #squereWidth>
+        <input type="number" class="input" placeholder="Length" #squereLength>
+    </div>
+
+    <button class="button" style="width: 150px;" (click)="create(orchardLength.value, orchardWidht.value, squereLength.value, squereWidth.value, squeresLength.value, squeresWidth.value);">Create</button>
+</div>

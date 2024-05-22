@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="box" style="height: 450px;">
+        <h1 class="title">Tree Soul</h1>
+        <input class="input" type="email" #email placeholder="Username or email">
+        <input class="input" type="password" #password placeholder="Password">
+        <button class="button" type="button" (click)="login(email.value, password.value)">Login</button>
+        <a class="link" href="/forgot_password">Forgot Password?</a>
+    </div>
+    
+    <div class="box">
+        <p>Don't have an account? <a class="link" href="/create_account">Sign up</a></p>
+    </div>
+</div>
